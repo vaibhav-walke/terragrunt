@@ -23,7 +23,7 @@ remote_state {
 
   config = {
     region         = "eu-west-1"
-    bucket         = "aws-poc-sparebank1-terragrunt-example-terraform-state-dev"
+    bucket         = "aws-poc-sparebank1-terragrunt-example-terraform-state-d"
     key            = "${path_relative_to_include()}/terraform.tfstate"
     dynamodb_table = "aws-poc-sparebank1-terragrunt-example-terraform-state-dev"
     encrypt        = true
