@@ -6,7 +6,6 @@ projects:
   autoplan:
     when_modified: ["*.hcl"]
   apply_requirements: ["mergeable"]
-  allowed_overrides: [apply_requirements, workflow]
 workflows:
   terragrunt:
     plan:
