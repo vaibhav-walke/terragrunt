@@ -2,6 +2,7 @@ version: 3
 automerge: true
 projects:
 - dir: live/dev/ec2
+  terraform_version: v0.12.18
   workflow: terragrunt
   autoplan:
     when_modified: ["*.hcl"]
@@ -14,4 +15,3 @@ workflows:
     apply:
       steps:
       - run: terragrunt apply -no-color $PLANFILE
-      
