@@ -29,4 +29,9 @@ inputs = {
   server_port = 8080
   elb_port    = 80
   image_id = "ami-03ef731cc103c9f09"
+  role_arn = "arn:aws:iam::711433298525:role/AssumeRole"
+  atlantis_user = "vaibhav"
+  atlantis_repo_owner = "sparebank1"
+  atlantis_repo_name = "terragrunt"
+  atlantis_pull_num = "1"
 }
