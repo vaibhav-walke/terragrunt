@@ -29,5 +29,4 @@ inputs = {
   server_port = 8080
   elb_port    = 80
   image_id = "ami-03ef731cc103c9f09"
-  role_arn = "arn:aws:iam::711433298525:role/atlantis"
 }

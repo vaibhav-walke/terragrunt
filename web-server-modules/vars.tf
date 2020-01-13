@@ -31,4 +31,7 @@ variable "elb_port" {
 }
 
 
+variable "role_arn" {
+  
+}
 

@@ -10,6 +10,10 @@
 
 provider "aws" {
   region = var.aws_region
+  assume_role {
+    role_arn     = var.role_arn
+    session_name = "${var.atlantis_user}-${var.atlantis_repo_owner}-${var.atlantis_repo_name}-${var.atlantis_pull_num}"
+  }
 }
 
 terraform {
