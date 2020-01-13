@@ -6,11 +6,6 @@ projects:
   autoplan:
     when_modified: ["*.hcl"]
   apply_requirements: ["mergeable"]
-- dir: web-server/qa/eu-west-1/webserver
-  workflow: terragrunt
-  autoplan:
-    when_modified: ["*.hcl"]
-  apply_requirements: ["mergeable"]
 workflows:
   terragrunt:
     plan:
