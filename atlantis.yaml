@@ -1,7 +1,7 @@
 version: 3
 automerge: true
 projects:
-- dir: web-server/qa/eu-west-1/webserver
+- dir: live/dev/ec2
   workflow: terragrunt
   autoplan:
     when_modified: ["*.hcl"]

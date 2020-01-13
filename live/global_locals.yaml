@@ -1,0 +1,4 @@
+ 
+github_organization: "terragrunt"
+github_repositories:
+  - "terragrunt"
