@@ -22,7 +22,7 @@ remote_state {
   backend = "s3"
 
   config = {
-    region         = "us-east-1"
+    region         = "eu-west-1"
     bucket         = "aws-poc-sparebank1-terragrunt-example-terraform-state-dev"
     key            = "${path_relative_to_include()}/terraform.tfstate"
     dynamodb_table = "aws-poc-sparebank1-terragrunt-example-terraform-state-dev"
