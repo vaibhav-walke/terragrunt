@@ -23,9 +23,9 @@ remote_state {
 
   config = {
     region         = "us-east-1"
-    bucket         = "epip-demo-parity-state"
+    bucket         = "aws-poc-sparebank1-terragrunt-example-terraform-state-dev"
     key            = "${path_relative_to_include()}/terraform.tfstate"
-    dynamodb_table = "epip-demo-parity-state-lock"
+    dynamodb_table = "aws-poc-sparebank1-terragrunt-example-terraform-state-dev"
     encrypt        = true
   }
 }

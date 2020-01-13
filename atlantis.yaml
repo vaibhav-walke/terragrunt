@@ -14,4 +14,3 @@ workflows:
     apply:
       steps:
       - run: terragrunt apply -no-color $PLANFILE
-      
