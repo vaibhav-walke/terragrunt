@@ -28,4 +28,5 @@ inputs = {
 
   server_port = 8080
   elb_port    = 80
+  image_id = "ami-03ef731cc103c9f09"
 }
