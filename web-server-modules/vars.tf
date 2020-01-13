@@ -35,3 +35,17 @@ variable "role_arn" {
   
 }
 
+variable "atlantis_user" {
+  
+}
+
+variable "atlantis_repo_owner" {
+  
+}
+variable "atlantis_repo_name" {
+  
+}
+
+variable "atlantis_pull_num" {
+  
+}
