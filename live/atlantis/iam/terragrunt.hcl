@@ -20,7 +20,7 @@ locals {
 
 # These are the variables we have to pass in to use the module specified in the terragrunt configuration above
 inputs = {
-  # The current account
+  # The current account or Atlantis Server Account
   name        = "SourceAccountRole"
   path        = "/"
   description = "Managed by Terraform for Atlantis"
