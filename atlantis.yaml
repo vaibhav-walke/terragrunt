@@ -9,24 +9,38 @@ projects:
   apply_requirements: ["mergeable"]
 - dir: live/dev/iam
   terraform_version: v0.12.18
-  workflow: terragrunt
+  workflow: dev
   autoplan:
     when_modified: ["*.hcl"]
   apply_requirements: ["mergeable"]
 - dir: live/dev/ec2
   terraform_version: v0.12.18
-  workflow: terragrunt
+  workflow: dev
   autoplan:
     when_modified: ["*.hcl"]
   apply_requirements: ["mergeable"]
 - dir: live/qa/ec2
   terraform_version: v0.12.18
-  workflow: terragrunt
+  workflow: qa
   autoplan:
     when_modified: ["*.hcl"]
   apply_requirements: ["mergeable"]
 workflows:
   terragrunt:
+    plan:
+      steps:
+      - run: terragrunt plan -no-color -out $PLANFILE
+    apply:
+      steps:
+      - run: terragrunt apply -no-color $PLANFILE
+  dev:
+    plan:
+      steps:
+      - run: terragrunt plan -no-color -out $PLANFILE
+    apply:
+      steps:
+      - run: terragrunt apply -no-color $PLANFILE
+  qa:
     plan:
       steps:
       - run: terragrunt plan -no-color -out $PLANFILE
