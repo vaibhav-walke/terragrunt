@@ -38,8 +38,8 @@ resource "aws_iam_policy" "sourceaccountrolepolicy" {
 
 # https://www.terraform.io/docs/providers/aws/r/iam_role_policy_attachment.html
 resource "aws_iam_role_policy_attachment" "sourceaccountrolepolicyattach" {
-  role       = aws_iam_role.default.name
-  policy_arn = aws_iam_policy.default.arn
+  role       = aws_iam_role.sourceaccountrole.name
+  policy_arn = aws_iam_policy.sourceaccountrolepolicy.arn
 }
 
 
