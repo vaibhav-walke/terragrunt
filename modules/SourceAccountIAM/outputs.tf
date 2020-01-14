@@ -1,4 +1,4 @@
-output "iam_role_arn" {
+/* output "iam_role_arn" {
   value       = aws_iam_role.sourceaccountrole.arn
   description = "The Amazon Resource Name (ARN) specifying the role."
 }
@@ -52,3 +52,4 @@ output "iam_policy_document" {
   value       = aws_iam_policy.sourceaccountrolepolicy.policy
   description = "The policy document."
 }
+ */
