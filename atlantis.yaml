@@ -1,5 +1,6 @@
 version: 3
 automerge: true
+
 projects:
 - dir: live/atlantis/iam
   terraform_version: v0.12.18
@@ -7,24 +8,28 @@ projects:
   autoplan:
     when_modified: ["*.hcl"]
   apply_requirements: ["mergeable"]
+
 - dir: live/dev/iam
   terraform_version: v0.12.18
   workflow: dev
   autoplan:
     when_modified: ["*.hcl"]
   apply_requirements: ["mergeable"]
+
 - dir: live/dev/ec2
   terraform_version: v0.12.18
   workflow: dev
   autoplan:
     when_modified: ["*.hcl"]
   apply_requirements: ["mergeable"]
+
 - dir: live/qa/ec2
   terraform_version: v0.12.18
   workflow: qa
   autoplan:
     when_modified: ["*.hcl"]
   apply_requirements: ["mergeable"]
+
 workflows:
   terragrunt:
     plan:
