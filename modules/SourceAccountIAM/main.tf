@@ -16,7 +16,7 @@ terraform {
 # https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html
 
 # https://www.terraform.io/docs/providers/aws/r/iam_role.html
-resource "aws_iam_role" "sourceaccountrole" {
+/* resource "aws_iam_role" "sourceaccountrole" {
   name               = var.name
   assume_role_policy = data.aws_iam_policy_document.assume_role_policy.json
 
@@ -68,4 +68,4 @@ data "aws_iam_policy_document" "policy" {
 
     resources = ["*"]
   }
-}
+} */
