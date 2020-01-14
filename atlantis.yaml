@@ -2,7 +2,7 @@ version: 3
 automerge: true
 
 projects:
-- dir: live/atlantis/iam
+- dir: live/atlantis/iam-config
   terraform_version: v0.12.18
   workflow: terragrunt
   autoplan:
