@@ -42,7 +42,7 @@ inputs = {
   ]}
 
   # Handle policies exclusively (declarative vs imperative)
-  exclusive_policy_attachment = "true
+  exclusive_policy_attachment = "true"
 
   # The account from which to assume the current account
   assumer_account_id        = "1234567890"
