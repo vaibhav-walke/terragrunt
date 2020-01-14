@@ -1,1 +1,6 @@
 aws_region: "eu-west-1"
+account_nember: "711433298525"
+atlantis_user: "vaibhav"
+atlantis_repo_owner: "sparebank1"
+atlantis_repo_name: "terragrunt"
+atlantis_pull_num: "1"
