@@ -1,6 +1,9 @@
 # ------------------------------------------------------------------------------------------------
 # (Required) Assumer Account definition (from what AWS account you STS assume into this account/role)
 # ------------------------------------------------------------------------------------------------
+variable "aws_region" {
+  description = "AWS region"
+}
 
 variable "assumer_account_id" {
   description = "The AWS account id/number of the assuming account that wants to assume into below defined role of the target account."
@@ -83,4 +86,24 @@ variable "default_policy_desc" {
 variable "exclusive_policy_attachment" {
   description = "If true, the aws_iam_policy_attachment resource creates exclusive attachments of IAM policies. Across the entire AWS account, all of the users/roles/groups to which a single policy is attached must be declared by a single aws_iam_policy_attachment resource. This means that even any users/roles/groups that have the attached policy via any other mechanism (including other Terraform resources) will have that attached policy revoked by this resource."
   default     = true
+}
+
+
+variable "account_nember" {
+  
+}
+
+variable "atlantis_user" {
+  
+}
+
+variable "atlantis_repo_owner" {
+  
+}
+variable "atlantis_repo_name" {
+  
+}
+
+variable "atlantis_pull_num" {
+  
 }

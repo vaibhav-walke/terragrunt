@@ -1,16 +1,11 @@
+variable "aws_region" {
+  description = "AWS region"
+}
+
+
 variable "name" {
   type        = "string"
   description = "The name of the role. If omitted, Terraform will assign a random, unique name."
-}
-
-variable "assume_role_policy" {
-  type        = "string"
-  description = "The policy that grants an entity permission to assume the role."
-}
-
-variable "policy" {
-  type        = "string"
-  description = "The policy document. This is a JSON formatted string."
 }
 
 variable "path" {
@@ -35,4 +30,24 @@ variable "force_detach_policies" {
   default     = false
   type        = "string"
   description = "Specifies to force detaching any policies the role has before destroying it."
+}
+
+
+variable "account_nember" {
+  
+}
+
+variable "atlantis_user" {
+  
+}
+
+variable "atlantis_repo_owner" {
+  
+}
+variable "atlantis_repo_name" {
+  
+}
+
+variable "atlantis_pull_num" {
+  
 }
