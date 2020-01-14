@@ -39,7 +39,7 @@ inputs = {
     path = "/",
     desc = "Description 2",
     file = "data/policy2.json"
-  ]}
+  }]
 
   # Handle policies exclusively (declarative vs imperative)
   exclusive_policy_attachment = "true"
