@@ -9,7 +9,7 @@ output "assumer_account_id" {
 
 output "assumer_account_role_arn" {
   description = "The AWS account ARN of the assuming account that wants to assume into below defined role of the target account."
-  value       = "arn:aws:iam::${var.assumer_account_id}:role${var.assumer_account_role_path}${var.assumer_account_role_name
+  value       = "arn:aws:iam::${var.assumer_account_id}:role${var.assumer_account_role_path}${var.assumer_account_role_name}"
 }
 
 output "assumer_account_role_name" {
