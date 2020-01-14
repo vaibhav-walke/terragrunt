@@ -23,7 +23,7 @@ inputs = {
   # The current account
   name        = "SourceAccountRole"
   path        = "/"
-  description = "Managed by Terraform"
+  description = "Managed by Terraform for Atlantis"
   max_session_duration  = 36000
   force_detach_policies = true
 }
