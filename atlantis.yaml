@@ -7,7 +7,7 @@ projects:
   workflow: terragrunt
   autoplan:
     when_modified: ["*.hcl"]
-  apply_requirements: ["mergeable"]
+  apply_requirements: ["approved"]
 
 - dir: live/dev/iam
   terraform_version: v0.12.18
