@@ -1,7 +1,7 @@
 provider "aws" {
   region = var.aws_region
   assume_role {
-    role_arn     = "arn:aws:iam::${var.account_nember}:role/AdminRoleForResourceCreation"
+    role_arn     = "arn:aws:iam::${var.account_nember}:role/AssumeRole"
     session_name = "${var.atlantis_user}-${var.atlantis_repo_owner}-${var.atlantis_repo_name}-${var.atlantis_pull_num}"
   }
 }
