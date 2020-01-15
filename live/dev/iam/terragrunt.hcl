@@ -1,7 +1,7 @@
 # Terragrunt will copy the Terraform configurations specified by the source parameter, along with any files in the
 # working directory, into a temporary folder, and execute your Terraform commands in that folder.
 terraform {
-  source = "../../../modules/TargetAccountIAM/"
+  source = "../../../modules/EmptyModule/"
 }
 
 # Include all settings from the root terragrunt.hcl file
@@ -48,7 +48,7 @@ inputs = {
   assumer_account_id        = "711433298525"
   assumer_account_role_name = "AssumeRole"
   assumer_account_role_path = "/"
-  
+
   tags = {
     Name  = "dev-admin-role"
     Env   = "dev"
