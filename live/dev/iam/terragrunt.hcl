@@ -45,7 +45,7 @@ inputs = {
   exclusive_policy_attachment = "true"
 
   # The account from which to assume the current account
-  assumer_account_id        = "1234567890"
+  assumer_account_id        = "037560318346"
   assumer_account_role_name = "AWS-Admins"
   assumer_account_role_path = "/"
 
