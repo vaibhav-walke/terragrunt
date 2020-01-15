@@ -16,25 +16,27 @@ terraform {
 # ------------------------------------------------------------------------------------------------
 
 # Create Cross-account Trusted Relationship for Role
-data "aws_iam_policy_document" "cross_account_role_policy" {
-  statement {
-    effect = "Allow"
-
-    principals {
-      type        = "AWS"
-      identifiers = ["arn:aws:iam::${var.assumer_account_id}:role${var.assumer_account_role_path}${var.assumer_account_role_name}"]
-    }
-
-    actions = ["sts:AssumeRole"]
-  }
-}
 
 # Create Role
 resource "aws_iam_role" "cross_account_role" {
   name = var.name
   path = var.path
 
-  assume_role_policy = data.aws_iam_policy_document.cross_account_role_policy.json
+  assume_role_policy = <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": "sts:AssumeRole",
+      "Principal": {
+        "AWS": "arn:aws:iam::${var.assumer_account_id}:role${var.assumer_account_role_path}${var.assumer_account_role_name}"
+      },
+      "Effect": "Allow",
+      "Sid": ""
+    }
+  ]
+}
+EOF
 
   # Allow session for X seconds
   max_session_duration = var.max_session_duration
