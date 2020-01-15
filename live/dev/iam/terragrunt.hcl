@@ -45,10 +45,10 @@ inputs = {
   exclusive_policy_attachment = "true"
 
   # The account from which to assume the current account
-  assumer_account_id        = "037560318346"
-  assumer_account_role_name = "AWS-Admins"
+  assumer_account_id        = "711433298525"
+  assumer_account_role_name = "AssumeRole"
   assumer_account_role_path = "/"
-
+  
   tags = {
     Name  = "dev-admin-role"
     Env   = "dev"
